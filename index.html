@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Side Bar Menu</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>$(document).ready(function(){
+            $(".right_menu li .fas").click(function(){
+                $(".profile_dd").toggleClass("active");
+             });
+
+             $(".hamburger").click(function(){
+                 $(".wrapper").toggleClass("active");
+             });
+        })</script>
+    </head>
+
+    <body>
+        <div class ="wrapper">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <div class="hamburger_inner">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </div>
+            
+
+                <div class="menu">
+                    <div class="logo">
+                        SHAHEEN Naiyer
+                    </div>
+                    <div class="right_menu">
+                        <ul><li><i class="fas fa-user"></i>
+                            <div class="profile_dd">
+                                <div class="dd_item">Profile</div>
+                                <div class="dd_item">Change Password</div>
+                                <div class="dd_item">Logout</div>
+                            </div>
+                        </li></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container">
+                <div class="sidebar">
+                    <div class="sidebar_inner">
+                        <div class="profile">
+                            <div class="img">
+                                <img src="pic.jpg" alt="profile_pic">
+                            </div>
+                            <div class="profile_info">
+                                <p>Welcome</p>
+                                <p class="profile_name">SN</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="active">
+                                    <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                                    <span class="title">About</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                                    <span class="title">Experience</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                                    <span class="title">Projects</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                                    <span class="title">Skills</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                                    <span class="title">Education</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                                    <span class="title">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="container">
+                    
+                    <div class="item">
+                        <div class="heading">
+                            ABOUT
+                        </div>
+                        <div class="about_img">
+                            <img src="about_pic.jpeg" alt="about_pic">
+                        </div>
+                        <div class="content">
+                            Hey, it's me Shaheen Naiyer!
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+                        <div class="heading">
+                            EXPERIENCE
+                        </div>
+                        <div class="content">
+                            Hey, it's me Shaheen Naiyer!
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            PROJECTS
+                        </div>
+                        <div class="content">
+                            Hey, it's me Shaheen Naiyer!
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            SKILLS
+                        </div>
+                        <div class="content">
+                            Hey, it's me Shaheen Naiyer!
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            EDUCATION
+                        </div>
+                        <div class="content">
+                            Hey, it's me Shaheen Naiyer!
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="heading">
+                            CONTACT
+                        </div>
+                        <div class="content">
+                            Hey, it's me Shaheen Naiyer!
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>
