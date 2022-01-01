@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
-        <title>Shaheen Naiyer Portfolio</title>
+        <title>Shaheen Naiyer</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="tab_icon.png">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -15,7 +15,12 @@
              $(".hamburger").click(function(){
                  $(".wrapper").toggleClass("active");
              });
-        })</script>
+             $('#main_container sidebar sidebar_inner ul li a').on('click',function(event){
+                    var $anchor = $(this);
+                    $('html, body').animate({
+                scrollTop: $($anchor.attr('href')).offset().t
+            });
+        </script>
     </head>
 
     <body>
@@ -34,6 +39,7 @@
                     <div class="logo">
                         SHAHEEN Naiyer
                     </div>
+                    <!--
                     <div class="right_menu">
                         <ul><li><i class="fas fa-user"></i>
                             <div class="profile_dd">
@@ -43,13 +49,15 @@
                             </div>
                         </li></ul>
                     </div>
+                    -->
                 </div>
             </div>
 
             <div class="main_container">
                 <div class="sidebar">
                     <div class="sidebar_inner">
-                        <div class="profile">
+                        <!-- 
+                        <div class="profile"> 
                             <div class="img">
                                 <img src="pic.jpg" alt="profile_pic">
                             </div>
@@ -58,44 +66,45 @@
                                 <p class="profile_name">SN</p>
                             </div>
                         </div>
+                        --->
                         <ul>
                             <li>
-                                <a href="#" class="active">
+                                <a href="#about_sec" class="active">
                                     <span class="icon"><i class="far fa-user"></i></i></span>
                                     <span class="title">About</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="#experience_sec">
                                     <span class="icon"><i class="fas fa-chart-line"></i></span>
                                     <span class="title">Experience</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="#projects_sec">
                                     <span class="icon"><i class="fas fa-tasks"></i></span>
                                     <span class="title">Projects</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="#skills_sec">
                                     <span class="icon"><i class="fas fa-chart-bar"></i></span>
                                     <span class="title">Skills</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="#education_sec">
                                     <span class="icon"><i class="fas fa-book"></i></span>
                                     <span class="title">Education</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="#contact_sec">
                                     <span class="icon"><i class="far fa-envelope"></i></span>
                                     <span class="title">Contact</span>
                                 </a>
@@ -106,7 +115,7 @@
                 </div>
                 <div class="container">
                     
-                    <div class="item">
+                    <div class="item" id="about_sec">
                         <div class="heading">
                             ABOUT
                         </div>
@@ -114,34 +123,37 @@
                             <img src="about_pic.jpeg" alt="about_pic">
                         </div>
                         <div class="content">
-                            Hey, it's me Shaheen Naiyer!
+                            We are still under construction, please visit again after UNKNOWN years!
                         </div>
 
                     </div>
 
-                    <div class="item">
-                        <div class="heading">
+                    <div class="item" id="experience_sec">
+                        <div class="heading" >
                             EXPERIENCE
                         </div>
                         <div class="content">
-                            Hey, it's me Shaheen Naiyer!
+                            We are still under construction, please visit again after UNKNOWN years!
                         </div>
 
                     </div>
-                    <div class="item">
-                        <div class="heading">
+                    <div class="item_projects" id="projects_sec">
+                        <div class="heading" >
                             PROJECTS
                         </div>
-                        <div class="content">
-                            <div class="indi_projects">
+                        <div class="content_projects">
+                            <div class="pro1">
+                                <div class="indi_projects">
                                 <div class="project_img">
                                     <img src="p1_pic.jpg" alt="project_pic">
                                 </div>
                                 <div class="heading_p">Project 1</div>
                                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
                                 <div class="descp">This is project 1</div>
+                                </div>
                             </div>
-
+                            
+                            <div class="pro2">
                             <div class="indi_projects">
                                 <div class="project_img">
                                     <img src="p1_pic.jpg" alt="project_pic">
@@ -149,34 +161,87 @@
                                 <div class="heading_p">Project 2</div>
                                 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
                                 <div class="descp">This is project 2</div>
+                            </div> </div>
+
+                            <div class="indi_projects">
+                                <div class="project_img">
+                                    <img src="p1_pic.jpg" alt="project_pic">
+                                </div>
+                                <div class="heading_p">Project 3</div>
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                                <div class="descp">This is project 3</div>
+                            </div>
+
+                            <div class="indi_projects">
+                                <div class="project_img">
+                                    <img src="p1_pic.jpg" alt="project_pic">
+                                </div>
+                                <div class="heading_p">Project 4</div>
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                                <div class="descp">This is project 4</div>
+                            </div>
+
+                            <div class="indi_projects">
+                                <div class="project_img">
+                                    <img src="p1_pic.jpg" alt="project_pic">
+                                </div>
+                                <div class="heading_p">Project 5</div>
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                                <div class="descp">This is project 5</div>
+                            </div>
+
+                            <div class="indi_projects">
+                                <div class="project_img">
+                                    <img src="p1_pic.jpg" alt="project_pic">
+                                </div>
+                                <div class="heading_p">Project 6</div>
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                                <div class="descp">This is project 6</div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="item">
+                    <div class="item" id="skills_sec">
                         <div class="heading">
                             SKILLS
                         </div>
                         <div class="content">
-                            Hey, it's me Shaheen Naiyer!
+                            We are still under construction, please visit again after UNKNOWN years!
                         </div>
 
                     </div>
-                    <div class="item">
+                    <div class="item" id="education_sec">
                         <div class="heading">
                             EDUCATION
                         </div>
                         <div class="content">
-                            Hey, it's me Shaheen Naiyer!
+                            We are still under construction, please visit again after UNKNOWN years!
                         </div>
 
                     </div>
-                    <div class="item">
+                    <div class="item" id="contact_sec">
                         <div class="heading">
                             CONTACT
                         </div>
                         <div class="content">
-                            Hey, it's me Shaheen Naiyer!
+                            <a href="https://www.linkedin.com/in/shaheen-naiyer-27496b178/">
+                                <span class="icon"><i class="fas fa-tasks"></i></span>
+                                <span class="title">Linkedin</span>
+                            </a>
+
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-tasks"></i></span>
+                                <span class="title">snshohin@gmail.com</span>
+                            </a>
+
+                            <a href="https://github.com/vthz">
+                                <span class="icon"><i class="fas fa-tasks"></i></span>
+                                <span class="title">GitHub</span>
+                            </a>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-tasks"></i></span>
+                                <span class="title">Extras2</span>
+                            </a>
                         </div>
 
                     </div>
